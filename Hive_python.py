@@ -20,7 +20,6 @@ start1=time.time()
 start=time.ctime()
 #print( "started at:"),start
 cur = conn.cursor()
-cur.execute('set mapreduce.job.queuename=araadh_q1.arapi_sq1')
 cur.execute(statement)
 df = cur.fetchall()
 cur.execute("show columns in dbo.tablename")
